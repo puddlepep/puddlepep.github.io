@@ -35,7 +35,7 @@ html {
     width: 100%;
     line-height: 32px;
         
-    background: url("assets/art/tree-left.png"), url("assets/art/tree-right.png"), url("assets/art/background.png");
+    background: url("assets/art/tree-left.webp"), url("assets/art/tree-right.webp"), url("assets/art/background.webp");
     background-position: left, right, center;
     background-repeat: no-repeat;
     background-size: auto 100%, auto 100%, cover;

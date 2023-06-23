@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "ForestHome";
+    src: url("assets/fonts/ForestHome.otf");
+}
+
+.bigtextforwhenurpep {
+    color: #efd8c9;
+    font-size: 48px;
+    font-family: "ForestHome";
+}
+
+.links {
+    color: #f084dc;
+    font-size: 32px;
+    font-family: "ForestHome";
+}
+
+.prelink {
+    color: #efd8c9;
+    display: inline;
+}
+
+a {
+    color: #f084dc;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    line-height: 32px;
+        
+    background: url("assets/art/tree-left.png"), url("assets/art/tree-right.png"), url("assets/art/background.png");
+    background-position: left, right, center;
+    background-repeat: no-repeat;
+    background-size: auto 100%, auto 100%, cover;
+    background-attachment: fixed;
+    background-color: black;
+}

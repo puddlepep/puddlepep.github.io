@@ -20,6 +20,14 @@
     display: inline;
 }
 
+#background {
+    width: 100%;
+    height: 100%;
+
+    /* background-image: url("assets/art/tree-left.webp"), url("assets/art/tree-right.webp"), url("assets/art/background.webp"); */
+    background-color: black;
+}
+
 a {
     color: #f084dc;
 }
@@ -35,10 +43,10 @@ html {
     width: 100%;
     line-height: 32px;
         
-    background: url("assets/art/tree-left.webp"), url("assets/art/tree-right.webp"), url("assets/art/background.webp");
+    /* background-image: url("assets/art/tree-left.webp"), url("assets/art/tree-right.webp"), url("assets/art/background.webp");
     background-position: left, right, center;
     background-repeat: no-repeat;
     background-size: auto 100%, auto 100%, cover;
-    background-attachment: fixed;
-    background-color: black;
+    background-attachment: fixed;*/
+    /* background-color: #000000; */
 }

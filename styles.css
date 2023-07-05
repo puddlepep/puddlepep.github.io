@@ -3,42 +3,65 @@
     src: url("assets/fonts/ForestHome.otf");
 }
 
-.bigtextforwhenurpep {
-    color: #efd8c9;
-    font-size: 48px;
-    font-family: "ForestHome";
-}
-
-.links {
-    color: #f084dc;
-    font-size: 32px;
-    font-family: "ForestHome";
-}
-
-.prelink {
-    color: #efd8c9;
-    display: inline;
+body {
+    background-color: #000000;
 }
 
 a {
     color: #f084dc;
 }
 
-body {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.prelink {
+    display: inline;
 }
 
-html {
+.text {
+    position: fixed;
+    text-align: center;
+    color: #efd8c9;
+
+    font-family: "ForestHome";
+    font-size: 32px;
+
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.bigtextforwhenurpep {
+    font-size: 48px;
+    line-height: 0px;
+    white-space: nowrap;
+}
+
+#pronouns {
+    color: #5A5549;
+}
+
+#trees-background {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    min-width: 1000%;
+    min-height: 1000%;
+    transform: translateX(-50%) translateY(-50.1%) scale(0.1);
+    z-index: -1;
+}
+
+#tree-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+
     height: 100%;
-    width: 100%;
-    line-height: 32px;
-        
-    background-image: url("assets/art/tree-left.webp"), url("assets/art/tree-right.webp"), url("assets/art/background.webp");
-    background-position: left, right, center;
-    background-repeat: no-repeat;
-    background-size: auto 100%, auto 100%, cover;
-    background-attachment: fixed;
-    background-color: #000000;
+    z-index: -1;
+}
+
+#tree-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    z-index: -1;
 }

@@ -1,0 +1,3 @@
+[submodule "topster-manager"]
+	path = topster-manager
+	url = https://github.com/puddlepep/topster-manager

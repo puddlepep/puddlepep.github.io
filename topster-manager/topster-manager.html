@@ -110,9 +110,24 @@ body {
 	visibility: visible;
 }
 		</style>
-		<link id='-gd-engine-icon' rel='icon' type='image/png' href='topster manager.icon.png' />
-<link rel='apple-touch-icon' href='topster manager.apple-touch-icon.png'/>
+		<link id='-gd-engine-icon' rel='icon' type='image/png' href='topster-manager.icon.png' />
+<link rel='apple-touch-icon' href='topster-manager.apple-touch-icon.png'/>
+<script>
+function getFile(callback) {
+	window.input = document.createElement('input');
+	input.type = 'file';
 
+	input.onchange = e => {
+		var file = e.target.files[0];
+		var reader = new FileReader();
+		reader.readAsText(file, 'UTF-8');
+		
+		reader.onload = readerEvent => {
+			callback(readerEvent.target.result);
+		}
+	}
+}
+</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -136,9 +151,9 @@ body {
 			<div id="status-notice" class="godot" style="display: none;"></div>
 		</div>
 
-		<script src="topster manager.js"></script>
+		<script src="topster-manager.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"topster manager","experimentalVK":false,"fileSizes":{"topster manager.pck":2685680,"topster manager.wasm":28972640},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"topster-manager","experimentalVK":false,"fileSizes":{"topster-manager.pck":2679872,"topster-manager.wasm":28972640},"focusCanvas":true,"gdextensionLibs":[]};
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {

@@ -34,6 +34,10 @@ a {
     white-space: nowrap;
 }
 
+.warning {
+    color: #fc2b5c;
+}
+
 #pronouns {
     color: #5A5549;
 }

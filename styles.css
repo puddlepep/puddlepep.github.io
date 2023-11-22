@@ -2,46 +2,52 @@
     font-family: "ForestHome";
     src: url("assets/fonts/ForestHome.otf");
 }
-
-body {
-    background-color: #000000;
-}
-
 a {
     color: #f084dc;
+    font-family: "ForestHome";
+    font-size: 32px;
+    text-align: right;
 }
 
-.prelink {
+/* title header thing */
+p, h1 {
+    color: #efd8c9;
+    font-family: "ForestHome";
+    font-size: 32px;
+    line-height: 0px;
+}
+h1 {
+    font-size: 90px;
+    line-height: 90px;
+}
+#pronouns {
+    color: #5A5549;
+    position: relative;
+    top: -60px;
+}
+
+/* about me stuff */
+#aboutme {
+    overflow:hidden; 
+    background-color: 'rgb(255,255,0)'; 
+    position: relative; 
+    width:404px; 
+    height: 404px; 
+    /* border: 4px dashed rgb(255, 255, 255);  */
+    margin: auto;
+
+    word-wrap: break-word; 
+    word-break: break-all; 
+}
+.aboutmetext {
+    font-family: monospace;
+    font-size: 32px; 
+    line-height: 33px; 
+    margin: 0; 
     display: inline;
 }
 
-.text {
-    position: fixed;
-    text-align: center;
-    color: #efd8c9;
-
-    font-family: "ForestHome";
-    font-size: 32px;
-
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-}
-
-.bigtextforwhenurpep {
-    font-size: 48px;
-    line-height: 0px;
-    white-space: nowrap;
-}
-
-.updated-note {
-    color: #5A5549;
-}
-
-#pronouns {
-    color: #5A5549;
-}
-
+/* background stuff */
 #trees-background {
     position: fixed;
     left: 50%;
@@ -51,7 +57,6 @@ a {
     transform: translateX(-50%) translateY(-50.1%) scale(0.1);
     z-index: -1;
 }
-
 #tree-left {
     position: fixed;
     left: 0;
@@ -60,7 +65,6 @@ a {
     height: 100%;
     z-index: -1;
 }
-
 #tree-right {
     position: fixed;
     right: 0;
@@ -70,6 +74,7 @@ a {
     z-index: -1;
 }
 
+/* end */
 html {
     visibility: visible;
 }

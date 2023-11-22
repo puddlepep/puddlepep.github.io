@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "ForestHome";
+    src: url("assets/fonts/ForestHome.otf");
+}
+a {
+    color: #f084dc;
+    font-family: "ForestHome";
+    font-size: 32px;
+    text-align: right;
+}
+
+/* title header thing */
+p, h1 {
+    color: #efd8c9;
+    font-family: "ForestHome";
+    font-size: 32px;
+    line-height: 0px;
+}
+h1 {
+    font-size: 90px;
+    line-height: 90px;
+}
+
+#tree-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    z-index: -1;
+}
+#tree-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    z-index: -1;
+}
+
+html {
+    visibility: visible;
+}

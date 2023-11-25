@@ -25,6 +25,9 @@ h1 {
     position: relative;
     top: -60px;
 }
+img {
+    image-rendering: crisp-edges;
+}
 
 /* about me stuff */
 #aboutme {
